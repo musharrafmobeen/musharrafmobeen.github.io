@@ -7,7 +7,7 @@
   <meta name="description" content="Musharaf Mobeen is a backend software engineer in Islamabad. Telecom, real estate, and AI products with NestJS, queues, and databases.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,640;1,9..144,520&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,19 +25,21 @@
 
   <main id="top">
     <section class="hero">
-      <p class="kicker">Backend software engineer · Islamabad</p>
-      <h1>Musharaf Mobeen</h1>
-      <p class="lede">I build the services behind products people actually use: billing and operations for a telecom, a real estate platform, and AI tools. Mostly NestJS, queues, and databases — four years of making those systems reliable.</p>
-      <div class="hero-actions">
-        <a class="button" href="mailto:musharrafmobeen8@gmail.com">Email me</a>
-        <a class="button button-ghost" href="https://github.com/musharrafmobeen" target="_blank" rel="noopener">GitHub</a>
-        <a class="button button-ghost" href="https://www.linkedin.com/in/musharaf-mobeen-047839162" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="hero-copy">
+        <p class="kicker">Backend software engineer · Islamabad</p>
+        <h1>Musharaf <em>Mobeen</em></h1>
+        <p class="lede">I build the services behind products people actually use: billing and operations for a telecom, a real estate platform, and AI tools. Mostly NestJS, queues, and databases — four years of making those systems reliable.</p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:musharrafmobeen8@gmail.com">Email me</a>
+          <a class="button button-ghost" href="https://github.com/musharrafmobeen" target="_blank" rel="noopener">GitHub</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/musharaf-mobeen-047839162" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-      <ul class="facts">
-        <li><span>Focus</span> Backend, APIs, event-driven systems</li>
-        <li><span>Now</span> Software Engineer at Transworld</li>
-        <li><span>Stack</span> NestJS · Redis · RabbitMQ · Docker</li>
-      </ul>
+      <aside class="hero-card" aria-label="At a glance">
+        <p><span>Now</span> Software Engineer at Transworld</p>
+        <p><span>Focus</span> APIs and event-driven systems</p>
+        <p><span>Stack</span> NestJS, Redis, RabbitMQ, Docker</p>
+      </aside>
     </section>
 
     <section id="work" class="section">
@@ -68,7 +70,7 @@
         </figure>
       </article>
 
-      <article class="feature">
+      <article class="feature feature-flip">
         <div class="feature-copy">
           <p class="index">02</p>
           <h3>UB Realty</h3>
@@ -84,23 +86,11 @@
             <a href="https://ubrealty.com/" target="_blank" rel="noopener">ubrealty.com</a>
           </p>
         </div>
-        <figure class="shot shot-fallback" aria-hidden="true">
-          <div class="window">
-            <div class="window-bar"><span></span><span></span><span></span></div>
-            <div class="listing">
-              <div class="listing-photo"></div>
-              <div>
-                <strong>Floor plans &amp; listings</strong>
-                <em>MLS · appointments · map</em>
-              </div>
-            </div>
-            <div class="listing">
-              <div class="listing-photo alt"></div>
-              <div>
-                <strong>Live property updates</strong>
-                <em>Scheduling on the same record</em>
-              </div>
-            </div>
+        <figure class="shot shot-place">
+          <div class="place">
+            <p>Real estate</p>
+            <strong>Listings, floor plans, and a map that stays current.</strong>
+            <span>ubrealty.com</span>
           </div>
         </figure>
       </article>
@@ -178,31 +168,37 @@
       </div>
       <ul class="project-grid">
         <li>
+          <p class="num">04</p>
           <h3>Orion</h3>
           <p>Telecom operations: authorization, ONT/OLT connections, bandwidth monitoring, TV and telephone integrations, multi-bank billing, and a speed test. Queries tightened and the app Dockerized.</p>
           <p class="quiet">No public link yet</p>
         </li>
         <li>
+          <p class="num">05</p>
           <h3>Investor360</h3>
           <p>Government app for investment trends in Saudi Arabia. KPIs for products, raw materials, licenses, and investors. APIs for licenses, factories, and investor records.</p>
           <p class="quiet">NestJS · Redis · MySQL</p>
         </li>
         <li>
+          <p class="num">06</p>
           <h3>Ogra</h3>
           <p>Real-time fleet tracking. Fuel monitoring while trucks load and unload, plus records for vehicles and drivers.</p>
           <p class="quiet">NestJS · RabbitMQ</p>
         </li>
         <li>
+          <p class="num">07</p>
           <h3>Cryptotax</h3>
           <p>Transaction tracking against exchange APIs, tax calculation, and reports users can actually file from.</p>
           <p class="quiet">No public link yet</p>
         </li>
         <li>
+          <p class="num">08</p>
           <h3>Elecktra</h3>
           <p>E-commerce backend: cart, users, payments, and notifications.</p>
           <p class="quiet">No public link yet</p>
         </li>
         <li>
+          <p class="num">09</p>
           <h3>NestJS Resource Generator</h3>
           <p>Generates entities, controllers, services, and migrations, including relationships, so CRUD doesn’t get rewritten by hand.</p>
           <p class="quiet">NestJS · TypeORM</p>
@@ -234,20 +230,19 @@
       </dl>
       <p class="edu">BS Software Engineering, International Islamic University Islamabad · 2017 – 2021. English and Urdu.</p>
     </section>
+  </main>
 
-    <section id="contact" class="section contact">
-      <h2>Let’s talk</h2>
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <p class="kicker kicker-light">Islamabad</p>
+      <h2>Let’s talk.</h2>
       <p>Backend roles, contract work, or a system that needs to be taken apart and put back together properly.</p>
       <p class="contact-links">
         <a href="mailto:musharrafmobeen8@gmail.com">musharrafmobeen8@gmail.com</a>
         <a href="tel:+923309890496">+92 330 9890496</a>
-        <a href="https://github.com/musharrafmobeen" target="_blank" rel="noopener">github.com/musharrafmobeen</a>
+        <a href="https://github.com/musharrafmobeen" target="_blank" rel="noopener">GitHub</a>
       </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Musharaf Mobeen · Islamabad</p>
-  </footer>
+    </div>
+  </section>
 </body>
 </html>
