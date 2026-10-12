@@ -7,7 +7,7 @@
   <meta name="description" content="Musharaf Mobeen is a backend software engineer in Islamabad. NestJS APIs for booking platforms, Qur’an products, telecom, real estate, and commerce.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,640;1,9..144,520&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -301,5 +301,21 @@
       </p>
     </div>
   </section>
+  <script>
+    const reveal = document.querySelectorAll(".section-head, .feature, .timeline li, .project-grid li, .skills div");
+    reveal.forEach((el) => {
+      const siblings = [...el.parentElement.children];
+      el.style.setProperty("--d", siblings.indexOf(el) * 70 + "ms");
+      el.classList.add("reveal");
+    });
+    const seen = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("in");
+        seen.unobserve(entry.target);
+      });
+    }, { threshold: 0.14, rootMargin: "0px 0px -6% 0px" });
+    reveal.forEach((el) => seen.observe(el));
+  </script>
 </body>
 </html>
