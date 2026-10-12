@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Musharaf Mobeen — Backend Engineer</title>
-  <meta name="description" content="Musharaf Mobeen is a backend software engineer in Islamabad. Telecom, real estate, and AI products with NestJS, queues, and databases.">
+  <meta name="description" content="Musharaf Mobeen is a backend software engineer in Islamabad. NestJS APIs for booking platforms, Qur’an products, telecom, real estate, and commerce.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,640;1,9..144,520&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
       <div class="hero-copy">
         <p class="kicker">Backend software engineer · Islamabad</p>
         <h1>Musharaf <em>Mobeen</em></h1>
-        <p class="lede">I build the services behind products people actually use: billing and operations for a telecom, a real estate platform, and AI tools. Mostly NestJS, queues, and databases — four years of making those systems reliable.</p>
+        <p class="lede">I build NestJS services people use every day: a multi-site sauna booking platform, a Qur’an reading product, telecom operations, real estate listings, and commerce APIs. Queues, Postgres, and payments — made reliable.</p>
         <div class="hero-actions">
           <a class="button" href="mailto:musharrafmobeen8@gmail.com">Email me</a>
           <a class="button button-ghost" href="https://github.com/musharrafmobeen" target="_blank" rel="noopener">GitHub</a>
@@ -37,8 +37,8 @@
       </div>
       <aside class="hero-card" aria-label="At a glance">
         <p><span>Now</span> Software Engineer at Transworld</p>
-        <p><span>Focus</span> APIs and event-driven systems</p>
-        <p><span>Stack</span> NestJS, Redis, RabbitMQ, Docker</p>
+        <p><span>Focus</span> APIs, bookings, and payments</p>
+        <p><span>Stack</span> NestJS, PostgreSQL, Redis, Docker</p>
       </aside>
     </section>
 
@@ -51,6 +51,27 @@
       <article class="feature">
         <div class="feature-copy">
           <p class="index">01</p>
+          <h3>Lowlu</h3>
+          <p class="meta">Self-care and sauna booking · NestJS · 2025 – 2026</p>
+          <p>Multi-site booking for wellness clubs: sessions, peak pricing, promos, referrals, Stripe payments and refunds, subscriptions, POS sales, door codes, and sauna device control. Largest body of backend work — bookings, schedules, GDPR, and admin tooling across about a hundred use cases.</p>
+          <ul class="tags">
+            <li>NestJS</li>
+            <li>PostgreSQL</li>
+            <li>Stripe</li>
+            <li>TypeORM</li>
+          </ul>
+          <p class="links">
+            <a href="https://lowlu.com/" target="_blank" rel="noopener">lowlu.com</a>
+          </p>
+        </div>
+        <figure class="shot" id="lowlu-shot">
+          <img src="images/lowlu.png" alt="Lowlu website homepage for sauna and wellness club booking.">
+        </figure>
+      </article>
+
+      <article class="feature feature-flip">
+        <div class="feature-copy">
+          <p class="index">02</p>
           <h3>My Transworld</h3>
           <p class="meta">Transworld · Software Engineer · Nov 2022 – present</p>
           <p>Customer app for a Pakistani internet provider: bills, payments, Wi-Fi, and service changes. I work on the backend and the ERP around it — engineering, sales, and customer care — with NestJS, Redis, RabbitMQ, and Docker.</p>
@@ -70,16 +91,16 @@
         </figure>
       </article>
 
-      <article class="feature feature-flip">
+      <article class="feature">
         <div class="feature-copy">
-          <p class="index">02</p>
+          <p class="index">03</p>
           <h3>UB Realty</h3>
-          <p class="meta">Real estate platform</p>
-          <p>Property listings, floor plans, and MLS integration, plus appointment scheduling and maps so listings stay current. A full product surface sitting on the APIs and data model behind it.</p>
+          <p class="meta">Real estate platform · NestJS</p>
+          <p>Property listings, floor plans, and MLS integration, plus appointment scheduling and maps so listings stay current. Backend work on the Orion API: auth, favourites, property import, and lead tooling.</p>
           <ul class="tags">
             <li>Listings</li>
             <li>MLS</li>
-            <li>Scheduling</li>
+            <li>NestJS</li>
             <li>Maps</li>
           </ul>
           <p class="links">
@@ -95,9 +116,9 @@
         </figure>
       </article>
 
-      <article class="feature">
+      <article class="feature feature-flip">
         <div class="feature-copy">
-          <p class="index">03</p>
+          <p class="index">04</p>
           <h3>Provision AI</h3>
           <p class="meta">Sustainability Information Technology Solutions · Part-time · 2024</p>
           <p>Backend for an AI product: Insights, Job Match, Interview Ace, Path Finder, and CV Revive. Express and MySQL, an LLM in the loop, WebSockets for notifications, and payments for premium access.</p>
@@ -164,41 +185,77 @@
     <section id="projects" class="section">
       <div class="section-head">
         <h2>More projects</h2>
-        <p>These don’t have a public link yet. They’re still part of the work.</p>
+        <p>Private products and APIs without a public marketing link. Still part of the work.</p>
       </div>
       <ul class="project-grid">
         <li>
-          <p class="num">04</p>
+          <p class="num">05</p>
+          <h3>Wisal</h3>
+          <p>Qur’an reading API: ayahs, tafsir, translations, recitations, knowledge points, challenges, communities, reflections, video clips, and notifications. Credible English/Urdu catalogue, app update checks, and verse-range clip listing.</p>
+          <p class="quiet">NestJS · TypeORM · PostgreSQL</p>
+        </li>
+        <li>
+          <p class="num">06</p>
+          <h3>Restaurant POS</h3>
+          <p>Multi-restaurant POS: organizations, menus with preparation locations, tables and orders, inventory transfers, invoices, VAT, and waiter ordering. A related API handles receipt creation, reprint, and print polling.</p>
+          <p class="quiet">NestJS · TypeORM · PostgreSQL</p>
+        </li>
+        <li>
+          <p class="num">07</p>
+          <h3>WhatsApp shop bot</h3>
+          <p>Commerce over WhatsApp: shops, menus, orders, drivers, addresses, and Saudi ZATCA e-invoicing with Phase 1 receipt QR and Phase 2 FATOORA onboarding.</p>
+          <p class="quiet">NestJS · WhatsApp · ZATCA</p>
+        </li>
+        <li>
+          <p class="num">08</p>
+          <h3>Buzz</h3>
+          <p>Talent marketplace API. Dual-role accounts with mode switching, social auth aligned to that model, and FCM tokens on signup. Bookings, payouts, reviews, and chat already in the product.</p>
+          <p class="quiet">NestJS · PostgreSQL · Socket.IO</p>
+        </li>
+        <li>
+          <p class="num">09</p>
+          <h3>Tinniwell</h3>
+          <p>Therapy session backend (Sontriva): two-factor auth hardening, free-session and safety-eligibility APIs, and idempotent schema migrations for production databases.</p>
+          <p class="quiet">NestJS · PostgreSQL</p>
+        </li>
+        <li>
+          <p class="num">10</p>
+          <h3>Metr</h3>
+          <p>Two Nest services for Murabba: user-service (phone OTP auth, advertiser follows) and content-service (help, contact, guest account recovery with bilingual English/Arabic errors).</p>
+          <p class="quiet">NestJS · OTP · SMS</p>
+        </li>
+        <li>
+          <p class="num">11</p>
           <h3>Orion</h3>
           <p>Telecom operations: authorization, ONT/OLT connections, bandwidth monitoring, TV and telephone integrations, multi-bank billing, and a speed test. Queries tightened and the app Dockerized.</p>
           <p class="quiet">No public link yet</p>
         </li>
         <li>
-          <p class="num">05</p>
+          <p class="num">12</p>
           <h3>Investor360</h3>
           <p>Government app for investment trends in Saudi Arabia. KPIs for products, raw materials, licenses, and investors. APIs for licenses, factories, and investor records.</p>
           <p class="quiet">NestJS · Redis · MySQL</p>
         </li>
         <li>
-          <p class="num">06</p>
+          <p class="num">13</p>
           <h3>Ogra</h3>
           <p>Real-time fleet tracking. Fuel monitoring while trucks load and unload, plus records for vehicles and drivers.</p>
           <p class="quiet">NestJS · RabbitMQ</p>
         </li>
         <li>
-          <p class="num">07</p>
+          <p class="num">14</p>
           <h3>Cryptotax</h3>
           <p>Transaction tracking against exchange APIs, tax calculation, and reports users can actually file from.</p>
           <p class="quiet">No public link yet</p>
         </li>
         <li>
-          <p class="num">08</p>
+          <p class="num">15</p>
           <h3>Elecktra</h3>
           <p>E-commerce backend: cart, users, payments, and notifications.</p>
           <p class="quiet">No public link yet</p>
         </li>
         <li>
-          <p class="num">09</p>
+          <p class="num">16</p>
           <h3>NestJS Resource Generator</h3>
           <p>Generates entities, controllers, services, and migrations, including relationships, so CRUD doesn’t get rewritten by hand.</p>
           <p class="quiet">NestJS · TypeORM</p>
@@ -225,7 +282,7 @@
         </div>
         <div>
           <dt>Systems</dt>
-          <dd>Docker, RabbitMQ, Kafka, microservices, sockets, AWS, CI/CD, Git</dd>
+          <dd>Docker, RabbitMQ, Kafka, Stripe, WhatsApp, AWS, CI/CD, Git</dd>
         </div>
       </dl>
       <p class="edu">BS Software Engineering, International Islamic University Islamabad · 2017 – 2021. English and Urdu.</p>
